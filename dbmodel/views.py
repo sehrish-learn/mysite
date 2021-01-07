@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 
 
 def signup(request):
+    # POST method is used to send the data from client to the server
     if request.method == 'POST':
         username = request.POST['username']
         firstname = request.POST['first_name']
